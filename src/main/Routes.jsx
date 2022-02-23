@@ -1,12 +1,12 @@
 import React from "react";
-import { useRoutes } from "react-router-dom";
+import { useRoutes, Navigate } from "react-router-dom";
 import Itinerario from "../components/transportes/Itinerario";
 import Lotacao from "../components/transportes/Lotacao";
 import Onibus from "../components/transportes/Onibus";
 
 const AppRoutes = () => {
   let element = useRoutes([
-    { path: "/", element: <Onibus /> },
+    { path: "/", element: <Navigate to="/onibus" /> },
     {
       path: "onibus",
       children: [

@@ -1,6 +1,10 @@
-import "../../assets/css/components/NavItem.css";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import styled from "styled-components";
+
+const Item = styled.span`
+  margin:auto;
+`;
 
 const NavItem = (props) => {
   const location = useLocation();
@@ -15,10 +19,10 @@ const NavItem = (props) => {
       aria-current="page"
       to={`/${props.link}`}
     >
-      <span className="bi d-block mx-auto mb-1 ">
+      <Item>
         <i className={`fa fa-${props.icon} px-1`}></i>
         {props.title}
-      </span>
+      </Item>
     </Link>
   );
 };
