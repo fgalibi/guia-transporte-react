@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { primary, secondary } from "../assets/css/variables";
 
 export const Card = styled.div`
-  padding: 2em;
+  padding: 1em;
   background-color: #edeeef;
 `;
 
@@ -15,6 +15,7 @@ export const CardTitle = styled.h5`
 export const CardText = styled.p`
   color: #6a6868;
   font-weight: 500;
+  min-height: 5em;
 `;
 
 export const BtnItinerario = styled.button`
